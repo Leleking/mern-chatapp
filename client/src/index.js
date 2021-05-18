@@ -10,9 +10,9 @@ import config from './config.json';
 ReactDOM.render(
   <Router>
     <Auth0ProviderWithHistory>
-      <React.StrictMode>
+      {/* <React.StrictMode> */}
         <App />
-      </React.StrictMode>
+      {/* </React.StrictMode> */}
     </Auth0ProviderWithHistory>
   </Router>
   ,
