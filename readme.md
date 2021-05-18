@@ -20,7 +20,7 @@ Install the dependencies and devDependencies and start the server.
 
 ```sh
 install docker
-$ docker-compose build
+
 $ docker-compose up
 ```
 
