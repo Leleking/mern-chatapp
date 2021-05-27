@@ -15,7 +15,7 @@ const Chat = () => {
   const [user, setUser] = useState({})
   const [room, setRoom] = useState("");
   const [onlineUsers, setOnlineUsers] = useState([])
-  const [activeUser, setActiveUser] = useState({id: 0})
+  const [activeUser, setActiveUser] = useState({})
   const [msg, setMsg] = useState("")
   const [messages, setMessages] = useState([])
 
@@ -79,11 +79,10 @@ const Chat = () => {
         setOnlineUsers(_users)
     })
   }, [])
-
+  
   useEffect(() => {
     socket.on('message', (message) => {
-      console.log(activeUser)
-      //alert(message.message.sender_id)
+     
         if(!!activeUser && (activeUser._id == message.message.sender_id)) {
           
           message = message.message
@@ -109,7 +108,7 @@ const Chat = () => {
         
         //setMessages([...messages, {...message}])
     })
-  }, [])
+  }, [activeUser])
 
   const selectUser = async (payload) => {
     try {
