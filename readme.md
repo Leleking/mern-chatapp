@@ -4,7 +4,9 @@
 
 
 
-ChatApp by Simeon Nortey. This application is a chatapp created using react, node, express for API, mongodb and Auth0 for authentication.
+ChatApp by Simeon Nortey. This application is a chat app created using react, node, express for API, MongoDB, SocketIO and Auth0 for authentication. This application shows you how SocketIO will work with React and Node.js so it is much more like a skeleton that you can build on it. Users can chat with individual users and users can block other users as well. The concept of blocking users can sometimes give you a headache but this helps you understand how you can go about it.
+
+ChatApp Snippet by [sunil8107]
 
 
  
@@ -14,15 +16,47 @@ ChatApp by Simeon Nortey. This application is a chatapp created using react, nod
 
 ### Installation
 
+Setup [Auth0] for easy authentication and add credentials to 
 
+config.json in 'client/src/config.json'
+```
+"REACT_APP_API_DOMAIN":"http://localhost:5000",
+"AUTH0_CLIENT_ID":"*******",
+"AUTH0_DOMAIN":"*******"
+```
+
+config.json in 'server/configuration.json'
+```
+{
+    "DB_URL":"mongodb://mongo:27017/chatapp",
+    "DB_PASSWORD":"",
+    "PORT":5000,
+    "APP_KEY":"p0Nv9R7LMIyDIkUQrRKZeRM59/NYFCeD7nZviVf2DyI=",
+    "AUTH0_CLIENT_ID":"",
+    "AUTH0_DOMAIN":""
+}
+```
 
 Install the dependencies and devDependencies and start the server.
+
 
 ```sh
 install docker
 
 $ docker-compose up
 ```
+
+If you wish to set up to run the project individually thus (without docker)
+```
+cd ./client
+npm install
+npm start
+
+cd ./server
+npm install
+npm start
+```
+
 
 View configuration files
 
@@ -49,6 +83,8 @@ MIT
 
 
    [dill]: <https://github.com/joemccann/dillinger>
+   [sunil8107]: <https://bootsnipp.com/sunil8107>
+   [auth0]: <https://auth0.com/signup>
    [git-repo-url]: <https://github.com/joemccann/dillinger.git>
    [john gruber]: <http://daringfireball.net>
    [df1]: <http://daringfireball.net/projects/markdown/>

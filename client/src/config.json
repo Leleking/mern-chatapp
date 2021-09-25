@@ -1,6 +1,6 @@
 {
     "REACT_APP_API_DOMAIN":"http://localhost:5000",
-    "AUTH0_CLIENT_ID":"WPQDvmFMeBPGESMdGzG3oVp37ulpS8te",
-    "AUTH0_DOMAIN":"dev-fdvklb6a.us.auth0.com",
-    "AUTH0_CLIENT_SECRET":"jWL7jrcMx-y5i4UBnCUN3maMKFG4MKbNs6kthjCDG2Wa71XJtfeaVFXsfRmu6y3C"
+    "AUTH0_CLIENT_ID":"",
+    "AUTH0_DOMAIN":"",
+    "AUTH0_CLIENT_SECRET":""
 }
