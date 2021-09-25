@@ -37,7 +37,7 @@ config.json in 'server/configuration.json'
     "DB_URL":"mongodb://mongo:27017/chatapp",
     "DB_PASSWORD":"",
     "PORT":5000,
-    "APP_KEY":"p0Nv9R7LMIyDIkUQrRKZeRM59/NYFCeD7nZviVf2DyI=",
+    "APP_KEY":"",
     "AUTH0_CLIENT_ID":"",
     "AUTH0_DOMAIN":""
 }
