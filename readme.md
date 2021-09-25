@@ -18,6 +18,12 @@ ChatApp Snippet by [sunil8107]
 
 Setup [Auth0] for easy authentication and add credentials to 
 
+Create Application
+- Set Application URLs : http://localhost:3000
+- Allowed Logout URLs : http://localhost:3000
+- Allowed Web Origins : http://localhost:3000
+- Allowed Origins (CORS) : http://localhost:3000
+
 config.json in 'client/src/config.json'
 ```
 "REACT_APP_API_DOMAIN":"http://localhost:5000",
